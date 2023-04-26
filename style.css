@@ -1,0 +1,656 @@
+* {
+  margin: 0;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.container {
+  background-color: #242424;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  background-color: #151515;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 25px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #ff0043;
+  border-radius: 30px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #151515;
+  border-radius: 30px;
+}
+
+.myname {
+  padding: 10px 15px;
+  font-size: 25px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.buttonHeader {
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: transparent;
+  border-color: white;
+  color: white;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.buttonHeader:hover {
+  border-color: rgb(255, 0, 0);
+  background-color: white;
+  color: black;
+}
+
+.titulo1 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 20px;
+  text-align: center;
+}
+
+.paragraph {
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-align: center;
+}
+
+.main-container {
+  flex: 1 0 auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
+    "item1 item2 item2"
+    "item1 item3 item3"
+    "item1 item4 item4";
+  gap: 5px;
+}
+
+.item {
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 50px;
+}
+
+.item1 {
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: item1;
+}
+
+.myface {
+  width: 200px;
+  height: 200px;
+  margin: 10px;
+}
+
+.paragraph1 {
+  margin: 10px;
+}
+
+.px {
+  margin: 10px;
+}
+
+.button {
+  font-size: 20px;
+  padding: 10px 10px;
+  border-radius: 10px;
+  background-color: white;
+  border-color: black;
+  color: black;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px;
+}
+
+.button:hover {
+  border-color: rgb(255, 0, 0);
+}
+
+.email {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px;
+}
+
+.email:hover {
+  color: brown;
+}
+
+.iconemail {
+  width: 15px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.iconemail:hover {
+  color: brown;
+}
+
+.whatsapp {
+  font-size: 20px;
+  cursor: pointer;
+  transition: 0.4s;
+  margin: 10px;
+}
+
+.whatsapp:hover {
+  color: brown;
+}
+
+.iconzap {
+  width: 18px;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.iconzap:hover {
+  color: brown;
+}
+
+.item2 {
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: item2;
+}
+
+.textoh2 {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+}
+
+.photoshop {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconps {
+  width: 23px;
+}
+
+.spanps {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.progress-photoshop {
+  height: 20px;
+  background-color: #aaa6a6;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.progressphoto {
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+.progress-textphoto {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 92%;
+  transform: translate(-50%, 10%);
+  font-size: 14px;
+  color: #000000;
+}
+
+.canva {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconcanva {
+  width: 20px;
+}
+
+.spancanva {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.progress-canva {
+  height: 20px;
+  background-color: #aaa6a6;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.progresscanva {
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+.progress-textcanva {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 97%;
+  transform: translate(-50%, 10%);
+  font-size: 14px;
+  color: #000000;
+}
+
+.html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconhtml {
+  width: 23px;
+}
+
+.spanhtml {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.progress-html {
+  height: 20px;
+  background-color: #aaa6a6;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.progresshtml {
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+.progress-texthtml {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 82%;
+  transform: translate(-50%, 10%);
+  font-size: 14px;
+  color: #000000;
+}
+
+.css {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconcss {
+  width: 20px;
+}
+
+.spancss {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.progress-css {
+  height: 20px;
+  background-color: #aaa6a6;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.progresscss {
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+.progress-textcss {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 67%;
+  transform: translate(-50%, 10%);
+  font-size: 14px;
+  color: #000000;
+}
+
+.js {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconjs {
+  width: 18px;
+}
+
+.spanjs {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.progress-js {
+  height: 20px;
+  background-color: #aaa6a6;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.progressjs {
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+.progress-textjs {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 52%;
+  transform: translate(-50%, 10%);
+  font-size: 14px;
+  color: #000000;
+}
+
+.marketing {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 10px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.iconmarketing {
+  width: 24px;
+}
+
+.spanmarketing {
+  display: inline-flex;
+  justify-content: flex-end;
+}
+
+.progress-marketing {
+  height: 20px;
+  background-color: #aaa6a6;
+  border-radius: 10px;
+  position: relative;
+  margin: 10px;
+}
+
+.progressmarketing {
+  height: 20px;
+  background-color: #ff0000;
+  border-radius: 10px;
+}
+
+.progress-textmarketing {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  position: absolute;
+  top: 0;
+  left: 57%;
+  transform: translate(-50%, 10%);
+  font-size: 14px;
+  color: #000000;
+}
+
+.item3 {
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: item3;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  height: 200px; /* altura definida */
+  overflow: auto; /* barra de rolagem aparecerá quando necessário */
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.themonster {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.themonster:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.themonster img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.dkzin {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.dkzin:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.dkzin img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.item4 {
+  font-family: Arial, Helvetica, sans-serif;
+  grid-area: item4;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  height: 200px; /* altura definida */
+  overflow: auto; /* barra de rolagem aparecerá quando necessário */
+  background-color: #ffffff;
+  padding: 20px;
+}
+
+.bannercss {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.bannercss:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.bannercss img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.cssmoderno {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.cssmoderno:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.cssmoderno img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.certificadohtml {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.certificadohtml:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.certificadohtml img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.certificadorobotica {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.certificadorobotica:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.certificadorobotica img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.certificadoingles {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.certificadoingles:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.certificadoingles img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.certificadoingles2 {
+  width: 250px;
+  height: 200px;
+  overflow: hidden; /* Esconde qualquer parte da imagem que ultrapasse os limites da div */
+  cursor: pointer;
+  margin: 15px;
+  border-radius: 5px;
+}
+
+.certificadoingles2:hover {
+  transform: scale(1.1); /* Aumenta a escala da imagem em 20% */
+}
+
+.certificadoingles2 img {
+  transition: transform 0.2s ease-out; /* Adiciona uma transição suave ao aumentar a escala da imagem */
+}
+
+.footer {
+  padding-block: 50px;
+  padding-bottom: 25px;
+  background-color: #151515;
+  color: #666873;
+}
+
+.footer-container {
+  max-width: 1160px;
+  margin: auto;
+  padding: 0 15px;
+}
+
+.footer-top {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  row-gap: 20px;
+}
+
+.footer-title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  color: #fff;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.footer-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-list-link {
+  transition: color 0.25s;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-list-link:hover {
+  color: #fff;
+}
+
+.footer-divider {
+  margin-block: 25px;
+  border: none;
+  border-top: 1px solid rgb(252, 255, 255, 0.1);
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.footer-list-bottom {
+  flex-direction: row;
+}
+
+.copyright {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 2560px) and (min-width: 1440px) {
+}
